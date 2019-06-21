@@ -39,6 +39,8 @@ namespace BethanysPieShop
             app.UseDeveloperExceptionPage(); //enable exception
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            //Add support for Identity
+            app.UseAuthentication();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
